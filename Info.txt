@@ -1,0 +1,4 @@
+Ligar xampp (Apache e MySql);
+
+*** (ELE PEGA SOMENTE AS PASTAS Q ESTÃO DENTRO DELE C: XAMPP/HTDOCS/CURSO_PHP) ***
+http://localhost/curso_php/1_intro/dois.php EXEMPLO DE COMO ACESSAR
