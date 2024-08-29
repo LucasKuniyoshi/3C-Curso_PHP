@@ -1,0 +1,41 @@
+1. Indique qual o tipo dos seguintes dados (Inteiro, Decimal, String ou Booleano): 
+-456
+false 
+“0.87”
+1.67
+“Casa 8” 
+0 
+1000 
+true
+“-900” 
+3 
+0.0 
+-3.1415 
+32150 
+128288 
+“false”
+
+Para os exercícios a seguir, utilize o comando readline() para receber entradas pelo terminal, da seguinte forma:
+
+$variavel = readline();
+Para executar arquivos php, abra um terminal na pasta em que os arquivos estão e digite:
+
+php nomedoarquivo.php
+
+2. Escreva um algoritmo para os problemas a seguir:
+Dados dois números inteiros (dividendo e divisor), apresentar o quociente e o resto.
+A partir de quatro números que serão fornecidos, calcular a média ponderada, considerando os pesos 1, 2, 3 e 4 respectivamente.
+Calcular o valor de um produto que sofreu reajuste de 1% (Aumento).
+Sabendo-se que 100 quilowatts de energia custa um sétimo do salário mínimo, fazer um algoritmo que receba o valor do salário mínimo e a quantidade de quilowatts gasta por uma residência. Calcular: o valor em reais de cada quilowatt, o valor em reais a ser pago e o valor a ser pago com desconto de 10%.
+Dadas a base e a altura de um retângulo, calcular o perímetro, a área e a diagonal.
+Calcular a área de um triângulo (dadas a base e a altura).
+Calcular a área de um losango (dadas as diagonais maior e menor).
+Dados o numerador e o denominador de uma fração, transformá-la em um número decimal.
+Uma revendedora de carros usados paga a seus funcionários vendedores um salário fixo por mês, mais uma comissão também fixa para cada carro vendido e mais 5% do valor das vendas por ele efetuadas. Escrever um algoritmo que leia o número de carros por ele vendidos, o valor total de suas vendas, o salário fixo e o valor que ele recebe por carro vendido. Calcule e escreva o salário final do vendedor.
+       —---------------- DESAFIOS OPCIONAIS —---------------
+Dada a hora, calcular quantos minutos se passaram desde o início do dia.
+Dado um número de três dígitos no formato CDU, mostre como resultado a sua inversão (formato UDC) (por exemplo, para 123, o resultado será 321).
+Dado um número de conta corrente com três dígitos, calcular seu dígito verificador, da seguinte forma:
+Somar o número da conta pelo seu inverso (igual ao exercício k);
+Multiplicar cada dígito da soma pela sua ordem posicional e somar estes resultados (primeiro * 1, segundo * 2, terceiro * 3, etc );
+O último dígito desse resultado é o dígito verificador da conta. 

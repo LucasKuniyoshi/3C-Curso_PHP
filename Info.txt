@@ -2,3 +2,9 @@ Ligar xampp (Apache e MySql);
 
 *** (ELE PEGA SOMENTE AS PASTAS Q ESTÃO DENTRO DELE C: XAMPP/HTDOCS/CURSO_PHP) ***
 http://localhost/curso_php/1_intro/dois.php EXEMPLO DE COMO ACESSAR
+
+expoente (exponeciação) => **
+
+(5_expressoes e operadores/2_mudancas tipo implicitas)
+concatenação => 5 . 5 => 55 (string) / "." PERMITE JUNTAR DOIS ELEMENTOS;
+NORMALMENTE USADO PARA SOMAR STRINGS
