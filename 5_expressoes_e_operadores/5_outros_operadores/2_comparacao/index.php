@@ -19,3 +19,11 @@
     if(3.2 !== "3.2"){ 
         echo "Não são identicos" . " , ";
     }
+    //MAIOR OU IGUAL
+    if(3.2 >= 3){ 
+        echo "É maior ou igual" . " , ";
+    }
+    //MENOR OU IGUAL
+    if(3.2 <= 3.7){ 
+        echo "É menor ou igual" . " , ";
+    }

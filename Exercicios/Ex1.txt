@@ -1,19 +1,19 @@
 1. Indique qual o tipo dos seguintes dados (Inteiro, Decimal, String ou Booleano): 
--456
-false 
-“0.87”
-1.67
-“Casa 8” 
-0 
-1000 
-true
-“-900” 
-3 
-0.0 
--3.1415 
-32150 
-128288 
-“false”
+-456 Inteiro
+false Booleano
+“0.87” String
+1.67 Decimal
+“Casa 8” String
+0 Inteiro/Booleano
+1000 Inteiro
+true Booleano
+“-900” String
+3 Inteiro
+0.0 Decimal
+-3.1415 Decimal
+32150 Inteiro
+128288 Inteiro
+“false” String
 
 Para os exercícios a seguir, utilize o comando readline() para receber entradas pelo terminal, da seguinte forma:
 
@@ -24,14 +24,86 @@ php nomedoarquivo.php
 
 2. Escreva um algoritmo para os problemas a seguir:
 Dados dois números inteiros (dividendo e divisor), apresentar o quociente e o resto.
+    $a = readline();
+    $b = readline();
+
+    $op1 = $a / $b;
+    $op2 = $a % $b;
+
+    echo "$op1 , ";
+    echo $op2;
+
 A partir de quatro números que serão fornecidos, calcular a média ponderada, considerando os pesos 1, 2, 3 e 4 respectivamente.
+    $a = readline();
+    $b = readline();
+    $c = readline();
+    $d = readline();
+
+    $op1 = ((1*$a) + (2*$b) + (3*$c) + (4*$d))/(1+2+3+4);
+
+    echo "$op1 . ";
+    
 Calcular o valor de um produto que sofreu reajuste de 1% (Aumento).
+    $a = readline();
+
+    $op1 = $a + $a* 0.01;
+
+    echo "$op1 . ";
+
 Sabendo-se que 100 quilowatts de energia custa um sétimo do salário mínimo, fazer um algoritmo que receba o valor do salário mínimo e a quantidade de quilowatts gasta por uma residência. Calcular: o valor em reais de cada quilowatt, o valor em reais a ser pago e o valor a ser pago com desconto de 10%.
+    $salarioMinimo = 1400;
+    $QtdeWatts = 152;
+
+    $CemKws = $salarioMinimo/7;
+    $ValorWatts = $CemKws / 100;
+    
+    echo "Valor de cada Kws: $ValorWatts , ";
+    echo "Valor a ser pago: " . ($ValorWatts * $QtdeWatts) . " , ";
+    $desconto = ($ValorWatts * $QtdeWatts) - (($ValorWatts * $QtdeWatts)*0.1);
+    echo "Valor de a ser pago com desconto: $desconto, ";
+
 Dadas a base e a altura de um retângulo, calcular o perímetro, a área e a diagonal.
+    $base = readline();
+    $altura= readline();
+
+    $perimetro = (2*$base) + (2*$altura);
+    $area = $base * $altura;
+    $diagonal = sqrt(($base ** 2) + ($altura ** 2));
+
+    echo "Perimetro:" . $perimetro . " , ";
+    echo "Area:" . $area . " , ";
+    echo "Diagonal:" . $diagonal . " , ";
+
 Calcular a área de um triângulo (dadas a base e a altura).
+    $base = readline();
+    $altura= readline();
+
+    $area = ($base * $altura) / 2;
+
+    echo "Area:" . $area . " , ";
+
 Calcular a área de um losango (dadas as diagonais maior e menor).
+    $D = readline();
+    $d= readline();
+
+    $area = ($D * $d) / 2;
+
+    echo "Area:" . $area . " , ";
+
 Dados o numerador e o denominador de uma fração, transformá-la em um número decimal.
+    $n = readline();
+    $d= readline();
+
+    $op = $n / $d;
+
+    echo "Area:" . $op . " , ";
+    
 Uma revendedora de carros usados paga a seus funcionários vendedores um salário fixo por mês, mais uma comissão também fixa para cada carro vendido e mais 5% do valor das vendas por ele efetuadas. Escrever um algoritmo que leia o número de carros por ele vendidos, o valor total de suas vendas, o salário fixo e o valor que ele recebe por carro vendido. Calcule e escreva o salário final do vendedor.
+    $vendedor = ["3", 150000, 1500, 1000];
+    $porcentagemDaVenda = ($vendedor[1] * 0.05);
+    $salario = $vendedor[2] + $vendedor[3] + $porcentagemDaVenda;
+    print_r($salario);
+    
        —---------------- DESAFIOS OPCIONAIS —---------------
 Dada a hora, calcular quantos minutos se passaram desde o início do dia.
 Dado um número de três dígitos no formato CDU, mostre como resultado a sua inversão (formato UDC) (por exemplo, para 123, o resultado será 321).
