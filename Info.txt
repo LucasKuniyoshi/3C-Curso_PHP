@@ -8,3 +8,5 @@ expoente (exponeciação) => **
 (5_expressoes e operadores/2_mudancas tipo implicitas)
 concatenação => 5 . 5 => 55 (string) / "." PERMITE JUNTAR DOIS ELEMENTOS;
 NORMALMENTE USADO PARA SOMAR STRINGS
+
+count($a) = tamanho do vetor $a
