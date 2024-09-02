@@ -1,0 +1,13 @@
+Escreva um algoritmo para imprimir os números de 1 (inclusive) a 10 (inclusive) em ordem crescente.
+Elaborar um programa que leia 10 valores inteiros e no final apresente a somatória e a média deles.
+Elaborar um programa que leia sucessivamente valores inteiros e no final apresente a somatória, a média e a quantidade de valores lidos. O programa deve ler os valores enquanto o usuário estiver fornecendo valores diferentes de zero. 
+Elaborar um programa que apresente o resultado da soma e a média dos valores pares situados na faixa numérica de 50 a 70.
+Elaborar um programa que leia valores inteiros até que o valor zero seja informado. No final deve ser apresentado o maior e o menor valor fornecido pelo usuário.
+      —------------------------- OPCIONAIS —------------------------
+Escreva um algoritmo para ler as notas da 1a. e 2a. avaliações de um aluno, calcule e imprima a média (simples) desse aluno. Só devem ser aceitos valores válidos durante a leitura (0 a 10) para cada nota. Após o cálculo da nota de um aluno, a mensagem 'NOVO CÁLCULO (S/N)?' deverá aparecer. Se for respondido 'S' deve ser executado um novo cálculo, caso contrário deverá encerrar o algoritmo.
+Ler 10 valores e após a leitura escrever quantos desses valores lidos são NEGATIVOS.
+Uma loja está levantando o valor total de todas as mercadorias em estoque. Escreva um algoritmo que permita a entrada das seguintes informações: 
+o número total de mercadorias no estoque; 
+o valor de cada mercadoria. Ao final imprimir o valor total em estoque e a média de valor das mercadorias
+O mesmo exercício anterior, mas agora não será informado o número de mercadorias em estoque. Então o funcionamento deverá ser da seguinte forma: ler o valor da mercadoria e perguntar ‘MAIS MERCADORIAS (S/N)?’. Ao final, imprimir o valor total em estoque e a média de valor das mercadorias em estoque.
+Escreva um algoritmo que imprima a tabuada (de 1 a 10) para os números de 1 a 10.
