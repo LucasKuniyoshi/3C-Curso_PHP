@@ -8,3 +8,8 @@ expoente (exponeciação) => **
 (5_expressoes e operadores/2_mudancas tipo implicitas)
 concatenação => 5 . 5 => 55 (string) / "." PERMITE JUNTAR DOIS ELEMENTOS;
 NORMALMENTE USADO PARA SOMAR STRINGS
+
+Include => possibilida rodar com páginas q n existem,
+Require => se eu chamar um página e ela n existir, a aplicação n roda
+Implode => JUNTA O VETOR NUMA STRING ÚNICA, POSSIBILITA SEPARÁ-LOS COMO QUEIRA
+$a .= "$array[$i]." CONCATENA O $a COM OS VALORES DO ARRAY.
