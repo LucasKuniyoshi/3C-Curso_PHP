@@ -3,13 +3,23 @@
     /*function Sair(){
         return $signin = false;
     }*/
+    function armazenaItem($id, $produto, $valor){
+        $nomeItem = [$produto];
+        $idUsuario = [$id];
+        $valorItem = [$valor];
+    }
 
     //MAIN
+    $nomeItem = [];
+    $idUsuario = [];
+    $valorItem = [];
+    
     $ValorTotal = 0;
     $maisUmProduto = 1;
     $confirmarUsuario = 0;
     $i = 0; //pra usuarios
     $j = 0; //pra produtos
+    $p = 0;
     $signin = true;
 
     while($signin){
@@ -47,9 +57,14 @@
                             array_push($usuarioLogado,end($nomeUsuario));
                             for($j = 0; $maisUmProduto != 0 || $maisUmProduto != '0'; $j++){
                                 echo "Nome do produto: ";
-                                $nomeProduto[$j] = readline();
+                                $nomeProduto[$p] = readline();
                                 echo "Valor do produto: ";
-                                $valorProduto[$j] = readline();
+                                $valorProduto[$p] = readline();
+                                //armazenaItem(end($nomeUsuario), $nomeProduto, $valorProduto);
+                                $nomeItem[$p] = $nomeProduto[$p];
+                                $idUsuario[$p] = end($nomeUsuario);
+                                $valorItem[$p] = $valorProduto[$p];
+                                $p++;
                                 $ValorTotal += $valorProduto[$j];
                                 echo "Deseja inserir mais um produto? (1.SIM   0.NÂO)";
                                 echo "\n";
@@ -58,18 +73,19 @@
                             $maisUmProduto = 1;
                             break;
                         case 2:
-                            for($d = 0; $confirmarUsuario != 1 || $confirmarUsuario != '1'; $d++){
+                            $confirmarUsuario = 0;
+                            for($d = 1; $confirmarUsuario != 1 || $confirmarUsuario != '1'; $d++){
                                 echo "Nome do novo usuário: ";
-                                $nomeUsuario[$d+1] = readline();
+                                $nomeUsuario[$d] = readline();
                                 echo "Senha do novo usuário: ";
-                                $senhaUsuario[$d+1] = readline();
+                                $senhaUsuario[$d] = readline();
                                 echo "\n";
-                                echo "Confirma as alterações usuário " . $nomeUsuario[$d+1] . "? (1.SIM  0.NÂO)";
+                                echo "Confirma as alterações usuário " . $nomeUsuario[$d] . "? (1.SIM  0.NÂO)";
                                 echo "\n";
                                 $confirmarUsuario = readline();
                             }
                             array_push($usuarioLogado,end($nomeUsuario));
-                            $confirmarUsuario = 1;
+                            
                             break;
                         case 3:
                             //$h = 3;
@@ -77,13 +93,18 @@
                             echo "Usuário logado: " . end($nomeUsuario) . ". ";
                             echo "\n";
                             echo "\n"; 
-                            for($k = 0; $k < count($nomeUsuario); $k++){  
+                            /*for($k = 0; $k < count($nomeUsuario); $k++){  
                                 if($nomeUsuario[$k] == $usuarioLogado[$k]){
                                     for($n = 0; $n < count($nomeProduto); $n++){
                                         echo "O Usuário " . $nomeUsuario[$k] . " realizou a venda do produto " . $nomeProduto[$n] . " no valor de " . $valorProduto[$n] . " reais às " . date('d/m/Y H:i:s') . ".";
                                         echo "\n";
                                     }                      
                                 }   
+                            }*/
+                            print_r($nomeProduto);
+                            for($n = 0; $n < count($nomeProduto); $n++){
+                                echo "O Usuário " . $idUsuario[$n] . " realizou a venda do produto " . $nomeItem[$n] . " no valor de " . $valorItem[$n] . " reais às " . date('d/m/Y H:i:s') . ".";
+                                echo "\n";
                             }
                             echo readline();
                             break;
