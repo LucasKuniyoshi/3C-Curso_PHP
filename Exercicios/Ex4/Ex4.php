@@ -33,5 +33,30 @@
     Echo "Números impares: $impar \n"; */
 
     //3
-    
+    /*$arr = [1,3,5,7,9,4,7,945,4,12];
+
+    for($i = 0; $i < count($arr); $i++){
+        if($arr[$i] >= 0){
+            if($arr[$i] >= $arr[$i+1] && $arr[$i+1] != NULL){
+                $maior = $arr[$i];
+                $indice = $i;
+            }
+        }
+    }
+    echo "Maior: " . $maior . "\n";
+    echo "Indice: $indice \n";*/
+
+    //4
+    $a = [1,3,456,87,98,5,677,456,45,2];
+    $b = readline();
+    array_push($a, $b);
+    $c = [];
+
+    for($i = 0; $i < count($a); $i++){
+        array_push($c, $a[$i] * $b);
+    }
+
+    print_r($c);
+
+    //5
     
