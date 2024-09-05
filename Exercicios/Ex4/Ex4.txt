@@ -1,0 +1,25 @@
+Escreva um programa que declare um array. O array deve ser preenchido automaticamente com números múltiplos de 5 até possuir 10 elementos. Depois disso imprima cada valor.
+Entre com 10 números e armazene em um vetor. Ao final o programa deverá mostrar: 
+Quantos negativos foram digitados; 
+Quantos positivos foram digitados; 
+Quantos pares e ímpares. 
+
+Ler um vetor de 10 posições (aceitar somente números positivos). Escrever a seguir o valor do maior elemento do vetor e a respectiva posição que ele ocupa no vetor.
+Ler um vetor A de 10 números. Após, ler mais um número e guardar em uma variável B. Armazenar em um vetor C o resultado de cada elemento de A multiplicado pelo valor B. Logo após, imprimir o vetor C.
+Faça um algoritmo para ler 10 números e armazenar em um vetor. Após a leitura total dos 10 números, o algoritmo deve escrever esses 10 números lidos na ordem inversa.
+Crie dois vetores, cada um com capacidade para armazenar 10 números. Solicite ao usuário que entre com os valores nestes dois vetores. O programa deverá mostrar a multiplicação dos dados dos vetores, em cada um de suas respectivas posições. Ex. vetor_a[0] * vetor_b[0] e assim por diante.
+      —-------------------- OPCIONAIS —----------------
+Crie um vetor que armazene o nome de todos os meses do ano. Peça ao usuário que digite um número e ele informe qual o nome do mês correspondente. 
+Escreva um algoritmo que permita a leitura das notas de uma turma de 20 alunos. Calcular a média da turma e contar quantos alunos obtiveram nota acima desta média calculada. Escrever a média da turma e o resultado da contagem.
+Escreva um algoritmo que permita a leitura dos nomes de 10 pessoas e armazena os nomes lidos em um vetor. Após isto, o algoritmo deve permitir a leitura de mais 1 nome qualquer de pessoa e depois escrever a mensagem ACHEI, se o nome estiver entre os 10 nomes lidos anteriormente (guardados no vetor), ou NÃO ACHEI caso contrário.
+Cadastre 10 pessoas utilizando vetores associativos, sendo que você deverá utilizar um vetor para cadastrar cada pessoa. Obtenha seguintes dados do usuário: nome, cidade, idade, sexo. Ao final do cadastro e armazenamento seu programa deverá exibir: 
+Uma listagem de todos os nomes e idades das pessoas cadastradas; 
+Uma listagem de todos os nomes de quem mora em Guarapuava; 
+Uma listagem de todos os nomes de quem tem mais de 18 anos; 
+E quantas pessoas cadastradas são do sexo feminino. 
+Faça um algoritmo para ler e armazenar em um vetor a temperatura média de 10 dias do ano. Calcular e escrever:
+Menor temperatura do ano
+Maior temperatura do ano
+Temperatura média anual
+ O número de dias no ano em que a temperatura foi inferior à média anual
+Faça um algoritmo para ler 10 números e armazenar em um vetor. Após isto, o algoritmo deve ordenar os números no vetor em ordem crescente. Escrever o vetor ordenado. (OBS: Não utilizar métodos de ordenação do PHP)
