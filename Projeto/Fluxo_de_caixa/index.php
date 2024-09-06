@@ -101,7 +101,7 @@
                                     }                      
                                 }   
                             }*/
-                            print_r($nomeProduto);
+                            //print_r($nomeProduto);
                             for($n = 0; $n < count($nomeProduto); $n++){
                                 echo "O Usuário " . $idUsuario[$n] . " realizou a venda do produto " . $nomeItem[$n] . " no valor de " . $valorItem[$n] . " reais às " . date('d/m/Y H:i:s') . ".";
                                 echo "\n";
