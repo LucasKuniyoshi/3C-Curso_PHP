@@ -15,3 +15,8 @@ Include => possibilida rodar com páginas q n existem,
 Require => se eu chamar um página e ela n existir, a aplicação n roda
 Implode => JUNTA O VETOR NUMA STRING ÚNICA, POSSIBILITA SEPARÁ-LOS COMO QUEIRA
 $a .= "$array[$i]." CONCATENA O $a COM OS VALORES DO ARRAY.
+==================================================
+
+CHAMANDO UM METODO DE UMA CLASSE:
+USAMOS "->" E N MAIS "."
+lucas.falar() ==> $lucas->falar(); 
