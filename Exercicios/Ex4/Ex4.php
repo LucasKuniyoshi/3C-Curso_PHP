@@ -47,7 +47,7 @@
     echo "Indice: $indice \n";*/
 
     //4
-    $a = [1,3,456,87,98,5,677,456,45,2];
+    /*$a = [1,3,456,87,98,5,677,456,45,2];
     $b = readline();
     array_push($a, $b);
     $c = [];
@@ -56,7 +56,34 @@
         array_push($c, $a[$i] * $b);
     }
 
-    print_r($c);
+    print_r($c);*/
 
     //5
+    /*$a = [];
+    for($i = 0; $i < 10; $i++){
+        $b = readline();
+        array_push($a, $b);
+    }
+
+    for($j = 9; $j >= 0; $j--){
+        echo $a[$j];
+    }*/
+
+    //6
+    $a = [];
+    $b = [];
+    for($i = 0; $i < 10; $i++){
+        echo "Valor para vetor A: \n";
+        $c = readline();
+        echo "Valor para vetor B: \n";
+        $d = readline();
+
+        array_push($a, $c);
+        array_push($b, $d);
+    }
+
+    for($j = 0; $j < 10; $j++){
+        $op = $a[$j] * $b[$j];
+        echo $op . "\n";
+    }
     
