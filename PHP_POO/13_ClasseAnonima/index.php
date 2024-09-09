@@ -1,5 +1,4 @@
 <?php
-   
     //N DA PRA FAZER HERANÇA
     $pessoa = new class(){
         public $nome = "Lucas";
