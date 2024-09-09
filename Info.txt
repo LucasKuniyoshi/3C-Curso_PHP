@@ -35,6 +35,10 @@ class Humano{
 
 =================================
 POO - Classes:
+THIS - aponta para a instância atual, aponta pros valores DAQUELE OBJETO    
 instanceof verifica se aquela variável pertence aquela classe
 
 TRAIT - PERMITE USAR DIFERENTES CLASSES SEM PRECISAR DE HERANÇA
+
+=============================
+div.titulo => <div class="titulo"></div> (comando shorthand)
