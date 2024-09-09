@@ -20,3 +20,21 @@ $a .= "$array[$i]." CONCATENA O $a COM OS VALORES DO ARRAY.
 CHAMANDO UM METODO DE UMA CLASSE:
 USAMOS "->" E N MAIS "."
 lucas.falar() ==> $lucas->falar(); 
+
+Printando constantes: self::BRANCOS
+class Humano{
+    public const OLHOS = 2;
+    public const BRACOS = 2;
+    public const PERNAS = 2;
+
+    function mostrarConstante(){
+        //utilizando constante em metodo
+        echo self::BRACOS . "\n";
+    }
+}
+
+=================================
+POO - Classes:
+instanceof verifica se aquela variável pertence aquela classe
+
+TRAIT - PERMITE USAR DIFERENTES CLASSES SEM PRECISAR DE HERANÇA
