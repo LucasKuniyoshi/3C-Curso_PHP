@@ -37,3 +37,48 @@
 
     $lucas->ajustaDataDeNascimento(17, 2,2006);
     echo $lucas->InformaIdade() . "\n";
+
+    //Ex2
+    class Universidade{
+        public $nome;
+
+        function __construct($nome){
+            $this->nome = $nome;
+            return $this->nome;
+        }
+
+        public function informar(){
+            echo $this->nome;
+        }
+    }
+
+    class Pessoa2 extends Universidade{
+        public $nomePessoa;
+        public $universidade;
+
+        function __construct($nomePessoa, $universidade){
+            $this->nomePessoa = $nomePessoa;
+            $this->universidade = $universidade;
+        }
+
+        public function informar(){
+            echo $this->nomePessoa . " trabalha na " . $this->universidade;
+        }
+    }
+
+    $puc = new Universidade("PUC");
+    $b = $puc->informar();
+    echo $b . "\n";
+
+    $unicentro = new Universidade("Unicentro");
+    $a = $unicentro->informar();
+    echo $a  . "\n";
+
+    $lucas = new Pessoa2("Lucas", "Unicentro");
+    echo $lucas->informar() . "\n";
+
+    $rapha = new Pessoa2("Rapha", "PUC");
+    echo $rapha->informar() . "\n";
+
+    //Ex3
+    

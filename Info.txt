@@ -35,10 +35,23 @@ class Humano{
 
 =================================
 POO - Classes:
-THIS - aponta para a instância atual, aponta pros valores DAQUELE OBJETO    
+THIS - aponta para a instância atual, aponta pros valores DAQUELE OBJETO!!! 
 instanceof verifica se aquela variável pertence aquela classe
 
 TRAIT - PERMITE USAR DIFERENTES CLASSES SEM PRECISAR DE HERANÇA
 
 =============================
 div.titulo => <div class="titulo"></div> (comando shorthand)
+
+INTERPOLAÇÃO:
+{$this->nome}
+
+CONSTRUTOR: 
+//PODE SE CRIAR O CONSTRUTOR COM VALORES JA PRE-DEFINIDOS
+function __construct($novoNome, $idade = 18){}
+
+HERANÇA:
+public function apresentar(){
+    echo "@{$this->login}: ";
+    parent::apresentar(); //PUXA A FUNÇÃO apresentar() DA CLASSE PAI 
+}
