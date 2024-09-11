@@ -55,3 +55,5 @@ public function apresentar(){
     echo "@{$this->login}: ";
     parent::apresentar(); //PUXA A FUNÇÃO apresentar() DA CLASSE PAI 
 }
+
+INTERFACE: POSSUI METODOS E COMPORTAMENTOS Q DEVEM SER IMPLEMENTADOS A PARTIR DAS CLASSES
