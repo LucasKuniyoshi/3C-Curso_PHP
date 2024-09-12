@@ -78,6 +78,7 @@
         private $tipo;
 
         function __construct($altura, $largura, $tipo){
+            //parent::__construct($altura, $largura);
             $this->altura = $altura;
             $this->largura = $largura;
             $this->tipo = $tipo;
@@ -99,13 +100,13 @@
         private $largura;
 
         function __construct($altura, $largura){
-            //parent::__construct();
+            //parent::__construct($altura, $largura);
             $this->altura = $altura;
             $this->largura = $largura;
         }
 
         public function calculaArea(){
-            return ($this->altura * $this->largura) / 2;
+            return ($this->altura * $this->largura);
         }
 
         public function verificaTipo(){

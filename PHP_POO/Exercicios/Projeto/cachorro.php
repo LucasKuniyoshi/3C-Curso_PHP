@@ -3,14 +3,11 @@
     require_once "humano.php";
 
     class Cachorro extends Animal{
-        public Humano $humano;
-
-        function __construc($nome, $raca, $patas, $cor, $peso, $tamanho, $humano){
-            parent::__construct();
-            $this->humano = $humano;
+        function __construc($nome, $raca, $patas, $cor, $peso, $tamanho){
+            parent::__construct($nome, $raca, $patas, $cor, $peso, $tamanho);
         }
 
         public function falar(){
-            echo "Au au";
+            echo "Au au \n";
         }
     }
