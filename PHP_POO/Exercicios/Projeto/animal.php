@@ -24,6 +24,9 @@
         public function getDono(){
             return $this->humano->nome;
         }
+        public function getNomePet(){
+            return $this->nome;
+        }
 
         public function falar(){
             echo "Estoy a falar \n";
