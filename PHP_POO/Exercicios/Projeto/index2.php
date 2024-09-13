@@ -45,7 +45,7 @@
                             echo "5. Voltar \n";
                             $opcao2 = readline();
     
-                            while($opcao1 != 5 || $opcao1 != '5'){
+                            while($opcao2 != 5 || $opcao2 != '5'){
                                 $nomePet = readline("Nome de seu pet: ");
                                 $raca = readline("Raça de seu pet: ");
                                 $numPatas = readline("Numero de patas de seu pet: ");
@@ -56,15 +56,15 @@
                                 switch($opcao2){
                                     case 1: 
                                         $cachorro = new Cachorro($nomePet, $raca, $numPatas, $corPet, $pesoPet,$tamanhoPet, $cliente);
-                                        echo "O cliente {$cachorro->getDono()} realizou o cadastro do pet {$cachorro->getNomePet()} \n";
+                                        echo "O cliente {$cachorro->getDono()} realizou o cadastro do cachorro {$cachorro->getNomePet()} \n";
                                         break;
                                     case 2: 
                                         $gato = new Gato($nomePet, $raca, $numPatas, $corPet, $pesoPet, $tamanhoPet, $cliente);
-                                        echo "O cliente {$gato->getDono()} realizou o cadastro do pet {$gato->getNomePet()} \n";
+                                        echo "O cliente {$gato->getDono()} realizou o cadastro do gato {$gato->getNomePet()} \n";
                                         break;
                                     case 3: 
                                         $passaro = new Passaro($nomePet, $raca, $numPatas, $corPet, $pesoPet, $tamanhoPet, $cliente);
-                                        echo "O cliente {$passaro->getDono()} realizou o cadastro do pet {$passaro->getNomePet()} \n";
+                                        echo "O cliente {$passaro->getDono()} realizou o cadastro do pássaro {$passaro->getNomePet()} \n";
                                         break;
                                     case 4: 
                                         $outroAnimal = new Animal($nomePet, $raca, $numPatas, $corPet, $pesoPet, $tamanhoPet, $cliente);
@@ -73,6 +73,7 @@
                                     default:
                                         echo "Escolha somente entre os valores de 1 a 4 !!!"; 
                                 }
+                                $opcao2 = 5;
                             }
                             break;
                         case 2: 
@@ -84,33 +85,33 @@
     
                             switch($opcaoProduto){
                                 case 1:
-                                    echo "A ração custa 79.89 reais, confirmar compra?";
+                                    echo "A ração custa 79.89 reais, confirmar compra? \n";
                                     $confirmar1 = readline("1.Sim  0.Não");
                                     if($confirmar1){
                                         $vendaProduto = new Venda("Ração", $cliente);
-                                        echo "O cliente {$vendaProduto->getHumano()} comprou {$vendaProduto->getProduto()}";
+                                        echo "O cliente {$vendaProduto->getHumano()} comprou {$vendaProduto->getProduto()} \n";
                                         array_push($ListaProduto, $vendaProduto->getProduto());
                                     }else{
                                         echo "Retornando para a tela de Comprar...";
                                     }
                                     break;
                                 case 2:
-                                    echo "A coleira custa 32.90 reais, confirmar compra?";
+                                    echo "A coleira custa 32.90 reais, confirmar compra? \n";
                                     $confirmar1 = readline("1.Sim  0.Não");
                                     if($confirmar1){
                                         $vendaProduto = new Venda("Coleira", $cliente);
-                                        echo "O cliente {$vendaProduto->getHumano()} comprou {$vendaProduto->getProduto()}";
+                                        echo "O cliente {$vendaProduto->getHumano()} comprou {$vendaProduto->getProduto()} \n";
                                         array_push($ListaProduto, $vendaProduto->getProduto());
                                     }else{
                                         echo "Retornando para a tela de Comprar...";
                                     }
                                     break;
                                 case 3:
-                                    echo "O petisco custa 12.50 reais, confirmar compra?";
+                                    echo "O petisco custa 12.50 reais, confirmar compra? \n";
                                     $confirmar1 = readline("1.Sim  0.Não");
                                     if($confirmar1){
                                         $vendaProduto = new Venda("Ração", $cliente);
-                                        echo "O cliente {$vendaProduto->getHumano()} comprou {$vendaProduto->getProduto()}";
+                                        echo "O cliente {$vendaProduto->getHumano()} comprou {$vendaProduto->getProduto()} \n";
                                         array_push($ListaProduto, $vendaProduto->getProduto());
                                     }else{
                                         echo "Retornando para a tela de Comprar...";
@@ -123,6 +124,7 @@
                         default:
                             echo "Escolha somente entre os valores 1 e 2 !!!"; 
                     }
+                    $opcao1 = 3;
                 }   
                 break;
             case 2:
@@ -164,6 +166,7 @@
                             default:
                             echo "Escolha somente entre os valores de 1 a 4 !!!"; 
                         }
+                        $opcao3 = 5;
                     }
                 }else{
                     echo "Only employees allowed!!";
@@ -173,6 +176,6 @@
                 $signin = false;
                 break;
             default:
-            echo "Escolha somente entre os valores 1 e 2 !!!"; 
+            echo "Escolha somente entre os valores de 1 a 3 !!!"; 
         }
     }
