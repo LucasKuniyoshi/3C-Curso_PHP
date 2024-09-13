@@ -6,7 +6,7 @@
         private $cor;
         private $peso;
         private $tamanho;
-        public Humano $humano;
+        private Humano $humano;
 
         function __construct($nome, $raca, $patas, $cor, $peso, $tamanho, $humano){
             $this->nome = $nome;

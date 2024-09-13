@@ -16,4 +16,7 @@
         public function getSalario(){
             return $this->salario;
         }
+        public function mostrarSalario(){
+            return "O Balconista " . $this->nome . " possui o salário de " . $this->getSalario() . " reais";
+        }
     }

@@ -17,6 +17,6 @@
             return $this->salario;
         }
         public function mostrarSalario(){
-            return "O Vendedor " . $this->nome . " possui o salário de " . $this->getSalario();
+            return "O Vendedor " . $this->nome . " possui o salário de " . $this->getSalario() . " reais";
         }
     }
